@@ -25,6 +25,8 @@ import java.util.ArrayList;
  */
 public class TiresCore {
 
+    /* new one */
+
     public static final String DS = "tc_debug";
     private static final String SAVE_KEY_ROOT = "TIRE.CALC.SMART";
     private static final String SAVE_KEY_TIRE = "TYRE_SIZE_No_";

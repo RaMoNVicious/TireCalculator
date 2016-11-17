@@ -1,0 +1,309 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@color/app_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/pnlAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/app_input_min_height"
+            android:orientation="vertical"
+            android:background="@color/app_main"
+            android:gravity="center_vertical|center_horizontal">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/pnlImage"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgTires"
+                android:paddingTop="@dimen/app_marging_main" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/pnlInfoScroll"
+                android:background="@color/app_background_info"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/pnlInfo">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/app_marging_main"
+                        android:id="@+id/pnlTireInfo">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_info_blank"
+                            android:id="@+id/txtInfo1"
+                            android:layout_weight="4"
+                            android:gravity="left"
+                            android:textColor="@color/blueprint_tire_stroke"
+                            android:textSize="@dimen/app_text_tire_info"
+                            android:lineSpacingExtra="@dimen/app_text_tire_info_line_spacing"
+                            android:paddingTop="@dimen/app_marging_main" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_info_blank"
+                            android:id="@+id/txtInfo"
+                            android:layout_weight="3"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/blueprint_tire_stroke"
+                            android:textSize="@dimen/app_text_tire_info"
+                            android:lineSpacingExtra="@dimen/app_text_tire_info_line_spacing"
+                            android:paddingTop="@dimen/app_marging_main" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_info_blank"
+                            android:id="@+id/txtInfo2"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:textColor="@color/blueprint_tire_stroke"
+                            android:textSize="@dimen/app_text_tire_info"
+                            android:lineSpacingExtra="@dimen/app_text_tire_info_line_spacing"
+                            android:paddingTop="@dimen/app_marging_main" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pnlTips"
+                        android:padding="@dimen/app_marging_main" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_info_blank"
+                            android:id="@+id/txtTip"
+                            android:gravity="left"
+                            android:textColor="@color/blueprint_tire_stroke"
+                            android:textSize="@dimen/app_text_tire_info"
+                            android:lineSpacingExtra="@dimen/app_text_tips_line_spacing"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom"
+        android:background="@color/app_main"
+        android:minHeight="@dimen/app_input_min_height">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/pnlTire1"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/text_tire_size_blank"
+                    android:id="@+id/txtTire1"
+                    android:textSize="@dimen/app_text_tire_size"
+                    android:gravity="center_horizontal|top"
+                    android:textColor="@color/blueprint_tire_stroke"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/text_rim_size_blank"
+                    android:id="@+id/txtRim1"
+                    android:textSize="@dimen/app_text_rim_size"
+                    android:gravity="center_horizontal|top"
+                    android:textColor="@color/blueprint_tire_fill"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnlTire2"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/text_tire_size_blank"
+                    android:id="@+id/txtTire2"
+                    android:textSize="@dimen/app_text_tire_size"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@color/blueprint_tire_stroke"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/text_rim_size_blank"
+                    android:id="@+id/txtRim2"
+                    android:textSize="@dimen/app_text_rim_size"
+                    android:gravity="center_horizontal|top"
+                    android:textColor="@color/blueprint_tire_fill"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pnlTireInput"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="visible"
+            android:background="@color/app_main">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/text_input_blank"
+                    android:id="@+id/cmb_width"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/app_text_tire_input_size"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/blueprint_tire_stroke" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_split_label"
+                    android:id="@+id/txt_split_01"
+                    android:textSize="@dimen/app_text_tire_input_size"
+                    android:textColor="@color/blueprint_tire_fill" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/text_input_blank"
+                    android:id="@+id/cmb_height"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/app_text_tire_input_size"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/blueprint_tire_stroke" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_input_blank"
+                    android:id="@+id/cmb_diameter"
+                    android:textSize="@dimen/app_text_tire_input_size"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/blueprint_tire_stroke" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_x_label"
+                    android:id="@+id/txt_split_03"
+                    android:textSize="@dimen/app_text_tire_input_size"
+                    android:textColor="@color/blueprint_tire_fill" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/text_input_blank"
+                    android:id="@+id/cmb_rim"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/app_text_tire_input_size"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/blueprint_tire_stroke" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_et_label"
+                    android:id="@+id/txt_split_04"
+                    android:textSize="@dimen/app_text_tire_input_size"
+                    android:textColor="@color/blueprint_tire_fill" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/text_input_blank"
+                    android:id="@+id/cmb_et"
+                    android:textSize="@dimen/app_text_tire_input_size"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/blueprint_tire_stroke"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cmdOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_ok"
+                android:paddingRight="@dimen/app_marging_labels" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

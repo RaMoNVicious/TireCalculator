@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="TireTheme" parent="Theme.AppCompat.Light">
+                <item name="colorPrimary">@color/app_main</item>
+                <item name="colorAccent">@color/app_accent</item>
+                <item name="colorPrimaryDark">@color/app_main_dark</item>
+                <item name="android:statusBarColor">@color/app_main</item>
+                <item name="android:navigationBarColor">@color/app_main</item>
+                <item name="android:colorForeground">@color/app_accent</item>
+                <item name="android:textColorPrimary">@color/app_accent</item>
+                <item name="android:colorBackground">@color/app_main</item>
+                <item name="android:textColorPrimaryInverse">@color/app_main_dark</item>
+        </style>
+</resources>

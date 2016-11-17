@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pnlTireSearch"
+        android:paddingLeft="@dimen/app_marging_options"
+        android:paddingTop="@dimen/app_marging_options"
+        android:paddingBottom="@dimen/app_marging_options"
+        android:paddingRight="@dimen/app_marging_main"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_tire_size_blank"
+            android:id="@+id/txtSize"
+            android:textSize="@dimen/search_result_text_size"
+            android:textColor="@color/blueprint_tire_stroke"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_info_blank"
+            android:id="@+id/txtDifferenceW"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/search_result_text_size_difference"
+            android:textColor="@color/blueprint_tire_stroke" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_info_blank"
+            android:id="@+id/txtDifferenceH"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/search_result_text_size_difference"
+            android:textColor="@color/blueprint_tire_stroke" />
+    </LinearLayout>
+
+</LinearLayout>

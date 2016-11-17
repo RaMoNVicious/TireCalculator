@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">Tire Calculator</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-6337813370020696/2486973965</string>
+
+    <string name="analytics_category_selected_tire" translatable="false">Selected Tire</string>
+    <string name="analytics_category_search_tire" translatable="false">Search Tires</string>
+
+    <string name="app_menu_in_inch">Imperial</string>
+    <string name="app_menu_info">How to read tire sizes &#8230;</string>
+    <string name="app_menu_about">About</string>
+    <string name="app_menu_find_size">Fit Tire</string>
+    <string name="app_menu_presets">Presets</string>
+
+    <string name="dialog_caption_about">About Tire Calculator</string>
+    <string name="dialog_text_about" translatable="false">Smart Tire Calculator v.0.7\n\ne-mail: info@rates.in.ua\n\nCopyright ©2015-2016 rates.in.ua</string>
+    <string name="dialog_caption_select_width">Select Tire Width</string>
+    <string name="dialog_caption_select_height">Select Tire Height</string>
+    <string name="dialog_caption_select_diameter">Select Rim Size</string>
+    <string name="dialog_caption_select_rim">Select Rim Width</string>
+    <string name="dialog_caption_select_offset">Select Rim Offset (ET)</string>
+    <string name="dialog_caption_search_tire">Suggested Tire Sizes \n(not all sizes may exists)</string>
+    <string name="dialog_btn_ok" translatable="false">OK</string>
+
+    <string name="search_caption">Find Tires</string>
+    <string name="search_caption_sub">for</string>
+    <string name="search_btn_search">Find Tires</string>
+    <string name="search_switch_lock_width">Lock tire width</string>
+    <string name="search_switch_lock_height">Lock tire height</string>
+    <string name="search_switch_lock_rim">Lock rim size</string>
+    <string name="search_switch_lock_rim_size">Rim size:</string>
+    <string name="search_switch_is_offroad">Off-Road tires</string>
+    <string name="search_result_size">SIZE</string>
+    <string name="search_result_height">HEIGHT</string>
+    <string name="search_result_width">WIDTH</string>
+
+    <string name="save_caption">Tire Size Presets</string>
+    <string name="save_btn_add">Save Tire Size</string>
+    <string name="save_btn_delete">Delete</string>
+
+    <string name="text_tire_size_blank" translatable="false">195/50 R15</string>
+    <string name="text_rim_size_blank" translatable="false">15x6.0 ET35</string>
+    <string name="text_input_blank" translatable="false"> - </string>
+    <string name="text_r_label" translatable="false">R</string>
+    <string name="text_x_label" translatable="false">x</string>
+    <string name="text_et_label" translatable="false">ET</string>
+    <string name="text_split_label" translatable="false">/</string>
+    <string name="text_size_mm">mm</string>
+    <string name="text_size_inch" translatable="false">\"</string>
+
+    <string name="text_info_blank" translatable="false">-text-</string>
+    <string name="text_info_tire_speed_default_km" translatable="false">100</string>
+    <string name="text_info_tire_speed_default_miles" translatable="false">60</string>
+    <string name="text_info_tire_width">tire width</string>
+    <string name="text_info_tire_side_height">tire side height</string>
+    <string name="text_info_overall_height">overall wheel height</string>
+    <string name="text_info_circumference">wheel circumference</string>
+    <string name="text_info_clearance">clearance</string>
+    <string name="text_info_clearance_default">default</string>
+    <string name="text_info_arc_gap">arch side gap</string>
+    <string name="text_info_suspension_gap">suspension gap</string>
+    <string name="text_info_speed_at_100">speed at 100kmph</string>
+    <string name="text_info_speed_at_60">speed at 60mph</string>
+    <string name="text_info_revs_at_km">revs per km</string>
+    <string name="text_info_revs_at_mile">revs per mile</string>
+
+
+    <string name="text_tips">Tips:</string>
+    <string name="text_tip_to_wheel_arc_title">Distance to wheel arcs:</string>
+    <string name="text_tip_to_wheel_arc_ok">there are no any issues in distance between tires and wheel arcs.</string>
+    <string name="text_tip_to_wheel_arc_warning">too close to wheel arcs - make sure there enough space between tires and wheel arcs! If not - select tires with less side height.</string>
+    <string name="text_tip_clearance_title">Clearance:</string>
+    <string name="text_tip_clearance_ok">there is enough space between cars bottom to ground.</string>
+    <string name="text_tip_clearance_warning">too close to ground - make sure there enough space between bottom of the car to road! If not - select tires with lager side height.</string>
+    <string name="text_tip_to_suspension_title">Distance to suspension parts: </string>
+    <string name="text_tip_to_suspension_ok">there no any issues in distance between tires and suspension parts.</string>
+    <string name="text_tip_to_suspension_warning">too close to suspension parts - make sure there enough space bettween tires and suspension parts! If not - select tire with less width.</string>
+
+
+    <string name="info_title">( 1 )\nThe nominal section width of the tire in millimeters; the widest point from both outer edges (side wall to side wall). The tire surface that touches the road usually has smaller width.\n
+        \n( 2 )\nThe aspect ratio of the sidewall height as a percentage of the nominal section width of the tire. If the information is omitted, it is assumed to be 82% (if written, it should be like xxx/82).\n
+        \n( 3 )\nAn optional letter indicating construction of the fabric carcass of the tire - R (radial), D (diagonal), B (bias belt, where the sidewalls are the same material as the tread, leading to a rigid ride).\n
+        \n( 4 )\nDiameter in inches of the wheel that the tires are designed to fit.\n
+        \n( 5 )\nIt specifies date of production (two digits for week of the year plus two digits for year; or two digits for week of the year plus one digit for year for tires made prior to 2000).</string>
+
+    <string-array name="array_diameter" translatable="false">
+        <item>R13</item>
+        <item>R14</item>
+        <item>R15</item>
+        <item>R16</item>
+        <item>R17</item>
+        <item>R18</item>
+        <item>R19</item>
+        <item>R20</item>
+        <item>R21</item>
+        <item>R22</item>
+        <item>R23</item>
+        <item>R24</item>
+        <item>R25</item>
+        <item>R26</item>
+    </string-array>
+
+    <string-array name="array_width" translatable="false">
+        <item>155</item>
+        <item>165</item>
+        <item>175</item>
+        <item>185</item>
+        <item>195</item>
+        <item>205</item>
+        <item>215</item>
+        <item>225</item>
+        <item>235</item>
+        <item>245</item>
+        <item>255</item>
+        <item>265</item>
+        <item>275</item>
+        <item>285</item>
+        <item>295</item>
+        <item>305</item>
+        <item>315</item>
+        <item>325</item>
+        <item>335</item>
+        <item>345</item>
+        <item>355</item>
+        <item>365</item>
+    </string-array>
+
+    <string-array name="array_height" translatable="false">
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+    </string-array>
+
+    <string-array name="array_rim" translatable="false">
+        <!--<item>4.5</item>-->
+        <item>5.0</item>
+        <item>5.5</item>
+        <item>6.0</item>
+        <item>6.5</item>
+        <item>7.0</item>
+        <item>7.5</item>
+        <item>8.0</item>
+        <item>8.5</item>
+        <item>9.0</item>
+        <item>9.5</item>
+        <item>10.0</item>
+        <item>10.5</item>
+        <item>11.0</item>
+        <item>11.5</item>
+        <item>12.0</item>
+        <item>12.5</item>
+        <item>13.0</item>
+    </string-array>
+
+    <string-array name="array_et" translatable="false">
+        <item>-55</item>
+        <item>-54</item>
+        <item>-53</item>
+        <item>-52</item>
+        <item>-51</item>
+        <item>-50</item>
+        <item>-49</item>
+        <item>-48</item>
+        <item>-47</item>
+        <item>-46</item>
+        <item>-45</item>
+        <item>-44</item>
+        <item>-43</item>
+        <item>-42</item>
+        <item>-41</item>
+        <item>-40</item>
+        <item>-39</item>
+        <item>-38</item>
+        <item>-37</item>
+        <item>-36</item>
+        <item>-35</item>
+        <item>-34</item>
+        <item>-33</item>
+        <item>-32</item>
+        <item>-31</item>
+        <item>-30</item>
+        <item>-29</item>
+        <item>-28</item>
+        <item>-27</item>
+        <item>-26</item>
+        <item>-25</item>
+        <item>-24</item>
+        <item>-23</item>
+        <item>-22</item>
+        <item>-21</item>
+        <item>-20</item>
+        <item>-19</item>
+        <item>-18</item>
+        <item>-17</item>
+        <item>-16</item>
+        <item>-15</item>
+        <item>-14</item>
+        <item>-13</item>
+        <item>-12</item>
+        <item>-11</item>
+        <item>-10</item>
+        <item>-9</item>
+        <item>-8</item>
+        <item>-7</item>
+        <item>-6</item>
+        <item>-5</item>
+        <item>-4</item>
+        <item>-3</item>
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+    </string-array>
+</resources>

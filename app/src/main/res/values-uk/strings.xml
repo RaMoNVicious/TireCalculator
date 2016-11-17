@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Шинний калькулятор</string>
+    <string name="app_menu_about">Про додаток</string>
+    <string name="app_menu_find_size">Підібрати шини</string>
+    <string name="app_menu_in_inch">В дюймах</string>
+    <string name="dialog_caption_about">Про додаток</string>
+    <string name="dialog_caption_search_tire">Можливі розміри \n(не всі можут існувати)</string>
+    <string name="dialog_caption_select_diameter">Діаметру диску</string>
+    <string name="dialog_caption_select_height">Висота профілю шини</string>
+    <string name="dialog_caption_select_width">Ширина шини</string>
+    <string name="dialog_caption_select_rim">Ширина диска</string>
+    <string name="dialog_caption_select_offset">Вильот диска (ET)</string>
+    <string name="text_info_tire_width">ширина шини</string>
+    <string name="text_info_circumference">довжина кола</string>
+    <string name="text_info_overall_height">загальна висота колеса</string>
+    <string name="text_info_revs_at_km">обертів за км</string>
+    <string name="text_info_revs_at_mile">обертів за милю</string>
+    <string name="text_info_speed_at_100">швидкість при 100км/г</string>
+    <string name="text_info_speed_at_60">швидкість при 60м/г</string>
+    <string name="text_info_tire_side_height">висота профіля шини</string>
+    <string name="text_size_mm">мм</string>
+    <string name="text_tips">Поради:</string>
+    <string name="text_tip_to_wheel_arc_title">Відстань від колеса до арки:</string>
+    <string name="text_tip_to_wheel_arc_ok">достатній.</string>
+    <string name="text_tip_to_wheel_arc_warning">занадто близько до крил - переконайтесь, що шина не буде зачіпати крила, в т.ч. у крайніх положеннях повороту керма та при роботі підвіски на стиснення. Або оберіть меньшу ширину шини.</string>
+    <string name="text_tip_clearance_title">Дорожній просвіт:</string>
+    <string name="text_tip_clearance_ok">достатній.</string>
+    <string name="text_tip_clearance_warning">занадто низько - переконайтесь, що від нижніх частин автомобіля до дорожнього покриття достатня відстань. Або оберіть вищу висоту профілю шини чи більший діаметр диску.</string>
+    <string name="text_tip_to_suspension_title">Відстань до элементів підвіски:</string>
+    <string name="text_tip_to_suspension_ok">достатній.</string>
+    <string name="text_tip_to_suspension_warning">занадто близько до частин підвіскі - переконайтесь, що шина не буде зачіпати частини підвіски, в т.ч. у крайніх положеннях повороту керма. Або оберіть меньшу ширину шини.</string>
+    <string name="text_info_clearance">клілренс</string>
+    <string name="text_info_clearance_default">норм.</string>
+    <string name="search_btn_search">Підібрати шин</string>
+    <string name="search_caption">Підбір шин</string>
+    <string name="search_caption_sub">для</string>
+    <string name="search_result_height">ВИСОТА</string>
+    <string name="search_result_size">РОЗМІР</string>
+    <string name="search_result_width">ШИРИНА</string>
+    <string name="search_switch_is_offroad">Позашляхові шини</string>
+    <string name="search_switch_lock_height">Фіксувати висоту</string>
+    <string name="search_switch_lock_rim">Фіксувати діаметер диску</string>
+    <string name="search_switch_lock_rim_size">Розмір диску:</string>
+    <string name="search_switch_lock_width">Фіксувати ширину</string>
+
+    <string name="info_title">( 1 )\nШирина профілю в міліметрах.\n
+        \n( 2 )\nВисота профілю шини (відношення висоти до ширини) в % (відсотках).\n
+        \n( 3 )\nR - позначає радіальну конструкцію. Діагональні шини спеціального індексу-літери в позначенні не мають. B (bias belt) — діагонально-опоясна шина.\n
+        \n( 4 )\nПосадковий діаметр дюймах (відповідає діаметру обода диску).\n
+        \n( 5 )\nДата виготовлення — 4 цифри (дві перші — тиждень, останні — рік виготовлення шини).
+    </string>
+    <string name="app_menu_info">Як читати розміри шин …</string>
+    <string name="text_info_arc_gap">до арки</string>
+    <string name="text_info_suspension_gap">до підвіски</string>
+    <string name="save_btn_add">Зберегти розмiр</string>
+    <string name="save_btn_delete">Видалити</string>
+    <string name="save_caption">Збереженi розмiри</string>
+    <string name="app_menu_presets">Збережені</string>
+</resources>

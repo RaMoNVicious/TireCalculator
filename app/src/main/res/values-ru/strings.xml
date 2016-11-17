@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Шинный калькулятор</string>
+    <string name="app_menu_about">О приложении</string>
+    <string name="app_menu_find_size">Подобрать шину</string>
+    <string name="app_menu_in_inch">В дюймах</string>
+    <string name="dialog_caption_about">О Приложении</string>
+    <string name="dialog_caption_search_tire">Возможные размеры \n(не все могут существовать)</string>
+    <string name="dialog_caption_select_diameter">Диаметр диска</string>
+    <string name="dialog_caption_select_height">Высота профиля шины</string>
+    <string name="dialog_caption_select_width">Ширина шины</string>
+    <string name="dialog_caption_select_rim">Ширина диска</string>
+    <string name="dialog_caption_select_offset">Вылет диска (ET)</string>
+    <string name="text_info_tire_width">ширина шины</string>
+    <string name="text_info_circumference">длина окружности</string>
+    <string name="text_info_overall_height">общая высота колеса</string>
+    <string name="text_info_revs_at_km">оборотов за км</string>
+    <string name="text_info_revs_at_mile">оборотов за милю</string>
+    <string name="text_info_speed_at_100">скорость при 100км/ч</string>
+    <string name="text_info_speed_at_60">скорость при 60м/ч</string>
+    <string name="text_info_tire_side_height">высота профиля шины</string>
+    <string name="text_size_mm">мм</string>
+    <string name="text_tips">Советы:</string>
+    <string name="text_tip_to_wheel_arc_title">Расстояние от колеса до арки:</string>
+    <string name="text_tip_to_wheel_arc_ok">достаточное.</string>
+    <string name="text_tip_to_wheel_arc_warning">слишком близко к крыльям - убедитесь, что шина не будет задевать крылья, в т.ч. в крайних положениях поворота руля и работе подвески на сжатие. Или выбирите меньшую высоту профиля шины или диаметр диска.</string>
+    <string name="text_tip_clearance_title">Дорожный просвет:</string>
+    <string name="text_tip_clearance_ok">достаточный.</string>
+    <string name="text_tip_clearance_warning">слишком низкий - убедитесь, что от нижних частей автомобиля до дорожного полотна достаточное расстояние. Или выберите большую высоту профиля шины или больший диаметр диска.</string>
+    <string name="text_tip_to_suspension_title">Расстояние до элементов подвески:</string>
+    <string name="text_tip_to_suspension_ok">достаточное.</string>
+    <string name="text_tip_to_suspension_warning">слишком близко к элементам подвески - убедитесь, что шина не будет задевать элементы подвески, в т.ч. в крайних положениях поворота руля. </string>
+    <string name="text_info_clearance">клиренс</string>
+    <string name="text_info_clearance_default">норм.</string>
+    <string name="search_btn_search">Подобрать шины</string>
+    <string name="search_caption">Подбор шин</string>
+    <string name="search_caption_sub">для</string>
+    <string name="search_result_height">ВЫСОТА</string>
+    <string name="search_result_size">РАЗМЕР</string>
+    <string name="search_result_width">ШИРИНА</string>
+    <string name="search_switch_is_offroad">Внедорожные шины</string>
+    <string name="search_switch_lock_height">Фиксировать высоту</string>
+    <string name="search_switch_lock_rim">Фиксировать диаметр диска</string>
+    <string name="search_switch_lock_rim_size">Размер диска:</string>
+    <string name="search_switch_lock_width">Фиксировать ширину</string>
+
+    <string name="info_title">( 1 )\nШирина профиля, мм.\n
+        \n( 2 )\nОтношение высоты профиля к ширине в процентах. Если не указан — считается равным 82%.\n
+        \n( 3 )\nШина имеет каркас радиального типа. Возможные варианты: B — bias belt (диагонально-опоясанная шина. Каркас шины тот же, что и у диагональной шины, но имеется брекер, как у радиальной шины), D или не указан — диагональный тип каркаса.\n
+        \n( 4 )\nПосадочный диаметр шины (соответствует диаметру обода диска), дюйм.\n
+        \n( 5 )\nДата изготовления - 4 цифры (две первые - неделя, две последние - год выпуска шины).</string>
+    <string name="app_menu_info">Как читать размеры шин …</string>
+    <string name="text_info_arc_gap">до арки</string>
+    <string name="text_info_suspension_gap">до подвески</string>
+    <string name="save_btn_add">Сохранить размер</string>
+    <string name="save_btn_delete">Удалить</string>
+    <string name="save_caption">Сохраненные размеры</string>
+    <string name="app_menu_presets">Сохраненные</string>
+</resources>

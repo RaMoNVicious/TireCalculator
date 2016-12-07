@@ -1248,8 +1248,13 @@ public class TiresCore {
         return false;
     }
 
-    public static void addPresset(String size) {
+    public static void addPreset(String size) {
         tiresSaved.add(size);
+    }
+
+    public static void deletePreset(int postion) {
+        if(postion < tiresSaved.size())
+            tiresSaved.remove(postion);
     }
 
     public static ArrayList<aTirePreset> getPresets() {

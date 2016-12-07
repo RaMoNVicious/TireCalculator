@@ -10,12 +10,16 @@
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="0dp"
         android:id="@+id/lstPresets"
         android:layout_weight="1"
-        android:listSelector="@color/app_main_dark_semi" />
+        android:listSelector="@color/app_main_dark_semi"
+        android:clickable="true"
+        android:choiceMode="singleChoice"
+        android:focusable="true" />
 
     <LinearLayout
+        android:id="@+id/pnlAdd"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

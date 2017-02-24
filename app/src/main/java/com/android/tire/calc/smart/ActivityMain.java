@@ -277,8 +277,6 @@ public class ActivityMain extends ActionBarActivity {
         boolean isInSize = response.getBooleanExtra("INCHES", false);
         int resSizeType = response.getIntExtra("SIZE_TYPE", -1);
 
-        //Log.d(TiresCore.DS, "ReceivedSize: SIZE = " + resSize + ", INCHES = " + isInSize);
-
         TextView txtT = new TextView(this);
 
         if(inputTire == 1) txtT = (TextView) findViewById(R.id.txtTire1);
@@ -300,8 +298,6 @@ public class ActivityMain extends ActionBarActivity {
 
 
         renderMain();
-
-        //Log.d(TiresCore.DS, "NewSize: " + TiresCore.getTire(inputTire).toString());
     }
 
     @Override

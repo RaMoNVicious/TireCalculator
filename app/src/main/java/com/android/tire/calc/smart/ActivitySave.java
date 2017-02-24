@@ -4,10 +4,12 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,6 +32,9 @@ public class ActivitySave extends AppCompatActivity {
 
     String tireToSave = "";
     String tireLabel = "";
+
+    int selectedPreset = -1;
+    Menu mMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,44 +76,81 @@ public class ActivitySave extends AppCompatActivity {
 
     public void render()
     {
+        for(int i = 0; i < TiresCore.getPresets().size(); i ++) {
+            String preset = TiresCore.getPresets().get(i).toDisplay();
+            if(preset.equalsIgnoreCase(tireLabel)) {
+                Log.d(TiresCore.DS, "list: size \"" + tireLabel + "\" already exists, index = " + i);
+                selectedPreset = i;
+                break;
+            }
+        }
+
+
+
         ListView lstPresets = (ListView) findViewById(R.id.lstPresets);
+        lstPresets.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         listTireSave adapter = new listTireSave(getApplicationContext(), TiresCore.getPresets());
         lstPresets.setAdapter(adapter);
+        //lstPresets.setItemChecked(selectedPreset, true);
 
         final ArrayList<aTirePreset> tmpResTires = TiresCore.getPresets();
         lstPresets.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.d(TiresCore.DS, "list: item-click = " + position);
-                //setTireSize(tmpResTires.get(position).getSize());
+
+                if(position == selectedPreset) {
+                    Log.d(TiresCore.DS, "list: preset selected = " + tmpResTires.get(position).toDisplay());
+                }
+
+                selectedPreset = position;
+                mMenu.findItem(R.id.action_delete).setVisible(true);
+
+                Log.d(TiresCore.DS, "list: item-click = " + selectedPreset + ", size = " + tmpResTires.get(position).toDisplay());
             }
         });
 
+        //lstPresets.performItemClick(lstPresets.getAdapter().getView(selectedPreset, null, null), selectedPreset, selectedPreset);
 
 
-        TextView txtTireSize = (TextView)findViewById(R.id.txtSizeToSave);
-        txtTireSize.setText(tireLabel);
+        LinearLayout pnlAdd = (LinearLayout)findViewById(R.id.pnlAdd);
+        if(selectedPreset == - 1) {
 
-        Button btnSave = (Button)findViewById(R.id.btnAddPreset);
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TiresCore.DS, "Saving... " + tireToSave);
-                TiresCore.addPresset(tireToSave);
+            pnlAdd.setVisibility(View.VISIBLE);
 
-                render();
-            }});
+            TextView txtTireSize = (TextView) findViewById(R.id.txtSizeToSave);
+            txtTireSize.setText(tireLabel);
 
+            Button btnSave = (Button) findViewById(R.id.btnAddPreset);
+            btnSave.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d(TiresCore.DS, "Saving... " + tireToSave);
+                    TiresCore.addPreset(tireToSave);
 
+                    render();
+                }
+            });
+
+        }
+        else {
+            pnlAdd.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_activity_save, menu);
+
+        mMenu = menu;
+        if(selectedPreset == -1)
+            mMenu.findItem(R.id.action_delete).setVisible(false);
+
+        return true;
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
-        //LinearLayout pnlOptions = (LinearLayout)findViewById(R.id.pnlSearchOptions);
-        //LinearLayout pnlResults = (LinearLayout)findViewById(R.id.pnlSearchResults);
-
 
         if (id == android.R.id.home) {
             Log.d(TiresCore.DS, "Save: menu-back");
@@ -116,8 +158,16 @@ public class ActivitySave extends AppCompatActivity {
 
             return true;
         }
+        else if(id == R.id.action_delete) {
+            Log.d(TiresCore.DS, "Deleting... " + TiresCore.getPresets().get(selectedPreset).toDisplay());
+            TiresCore.deletePreset(selectedPreset);
+            selectedPreset = -1;
 
 
+            render();
+
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

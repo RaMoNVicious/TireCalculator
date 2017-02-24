@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/pnlTireSearch"
-        android:gravity="center_vertical">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/btn_delete"
-            android:id="@+id/imageView3"
-            android:padding="@dimen/app_marging_options" />
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_tire_size_blank"
             android:id="@+id/txtSize"
             android:textSize="@dimen/search_result_text_size"
             android:textColor="@color/blueprint_tire_stroke"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/btn_ok"
-            android:id="@+id/imageView2"
-            android:padding="@dimen/app_marging_options"
-            android:layout_gravity="right" />
-
-
-    </LinearLayout>
+            android:padding="@dimen/app_marging_options" />
 
 </LinearLayout>

@@ -10,12 +10,12 @@ public class aTirePreset {
     private boolean Selected;
 
     public aTirePreset(String size, boolean selected) {
-        Log.d(TiresCore.DS, "aTirePreset:size = " + size + ", selected = " + selected);
+        //Log.d(TiresCore.DS, "aTirePreset:size = " + size + ", selected = " + selected);
 
         this.Size = new aTire(size);
         Selected = selected;
 
-        Log.d(TiresCore.DS, "aTirePreset:init = " + Size.getTireLabel());
+        //Log.d(TiresCore.DS, "aTirePreset:init = " + Size.getTireLabel());
     }
 
     public String toDisplay() {
